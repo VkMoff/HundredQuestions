@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" type="text/css" href="../static/question.css">
+</head>
+<body>
+    <button onclick="window.location.href='/';">На главную</button>
+    <div class="block">{{name}}</div>
+    <div class="block">{{work}}</div>
+    <div class="block">{{job}}</div>
+    <div class="block">{{question}}</div>
+    <!-- <a href="/question/">Ещё вопрос</a> -->
+    <form action="/question/" method="POST">
+        <button type="submit", name="index", value="{{link}}">Ещё вопрос</button>
+    </form>
+    Вопросов осталось: {{left_amount}}
+</body>
+</html>
